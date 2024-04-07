@@ -45,21 +45,21 @@ int main(int argc, char *argv[]) {
 		case 4:
 		{
 			Parser::PcapParser<4> pcap_parser(input_path.c_str(), output_path.c_str(), v_ptr, packet_count, write_to_binary_file,
-												write_to_txt_file, write_to_pcap_file, flow_count, epoch_num, epoch_len);
+												write_to_txt_file, write_to_pcap_file, flow_count, epoch_num, epoch_len, network_endian);
 			pcap_parser.pcapParse();
 		}
 		break;
 		case 8:
 		{
 			Parser::PcapParser<8> pcap_parser(input_path.c_str(), output_path.c_str(), v_ptr, packet_count, write_to_binary_file,
-												write_to_txt_file, write_to_pcap_file, flow_count, epoch_num, epoch_len);
+												write_to_txt_file, write_to_pcap_file, flow_count, epoch_num, epoch_len, network_endian);
 			pcap_parser.pcapParse();
 		}
 		break;
 		case 13:
 		{
 			Parser::PcapParser<13> pcap_parser(input_path.c_str(), output_path.c_str(), v_ptr, packet_count, write_to_binary_file,
-												write_to_txt_file, write_to_pcap_file, flow_count, epoch_num, epoch_len);
+												write_to_txt_file, write_to_pcap_file, flow_count, epoch_num, epoch_len, network_endian);
 			pcap_parser.pcapParse();
 		}
 		break;
